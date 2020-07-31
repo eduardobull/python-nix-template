@@ -1,0 +1,10 @@
+{% raw %}
+NOTEBOOK_TARGET := 'notebooks/*.ipynb'
+
+format-notebooks target=NOTEBOOK_TARGET:
+    nbqa isort {{target}}
+    nbqa black {{target}}
+
+lint-notebooks target=NOTEBOOK_TARGET: (format-notebooks target)
+    nbqa ruff {{target}} --fix || true
+{% endraw %}

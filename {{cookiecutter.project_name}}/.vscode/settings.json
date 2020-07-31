@@ -1,0 +1,45 @@
+{
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "autoDocstring.docstringFormat": "numpy",
+    "editor.formatOnSave": true,
+    "editor.rulers": [
+        88
+    ],
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "git.ignoreLimitWarning": true,
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "nixEnvSelector.nixFile": "${workspaceFolder}/shell.nix",
+    "nixEnvSelector.suggestion": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.defaultInterpreterPath": "./.venv/bin/python",
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.formatting.provider": "black",
+    "python.linting.banditArgs": [
+        "--ignore=B101"
+    ],
+    "python.linting.banditEnabled": true,
+    "python.testing.pytestArgs": [
+        "test"
+    ],
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH": "${workspaceFolder}"
+    },
+    "terminal.integrated.env.osx": {
+        "PYTHONPATH": "${workspaceFolder}"
+    },
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH": "${workspaceFolder}"
+    }
+}
