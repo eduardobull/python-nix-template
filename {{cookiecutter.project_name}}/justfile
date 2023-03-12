@@ -5,6 +5,6 @@ format-notebooks target=NOTEBOOK_TARGET:
     nbqa isort {{target}}
     nbqa black {{target}}
 
-lint-notebooks target=NOTEBOOK_TARGET: (format-notebooks target)
+lint-notebooks target=NOTEBOOK_TARGET:
     nbqa ruff {{target}} --fix || true
 {% endraw %}
