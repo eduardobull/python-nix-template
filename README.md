@@ -1,6 +1,6 @@
 # Dependencies
 
-- [Nix](https://github.com/NixOS/nix)
+- [Nix](https://github.com/NixOS/nix) (alternative: [The Determinate Nix Installer](https://github.com/DeterminateSystems/nix-installer))
 - [direnv](https://github.com/direnv/direnv)
 - [nix-direnv](https://github.com/nix-community/nix-direnv)
 
