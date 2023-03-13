@@ -1,4 +1,5 @@
 {% raw %}
+
 NOTEBOOK_TARGET := 'notebooks/*.ipynb'
 
 format-notebooks target=NOTEBOOK_TARGET:
@@ -7,10 +8,11 @@ format-notebooks target=NOTEBOOK_TARGET:
 
 lint-notebooks target=NOTEBOOK_TARGET:
     nbqa ruff {{target}} --fix || true
-{% endraw %}
 
 update-nix-dependencies:
     niv update
 
 update-python-dependencies:
     poetry update
+
+{% endraw %}
